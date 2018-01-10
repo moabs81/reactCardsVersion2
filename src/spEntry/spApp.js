@@ -4,7 +4,7 @@ import fetchData from '../components/locationCard/jsModules/fetchData';
 import AllCardsContainer from '../components/locationCard/jsModules/AllCardsContainer';
 
 const spRestParams = {
-    baseURI: 'https://tsps.ncsecu.local/support-center',
+    baseURI: '<internalURL>',
     searchURI: '/_api/web/lists/getbytitle(\'Branch Directory\')/items',
     method: 'GET',
     headers: [{ 'header': 'Accept', 'value': 'application/json' }, { 'header': 'odata', 'value': 'verbose' }]
