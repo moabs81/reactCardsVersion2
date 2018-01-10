@@ -8,10 +8,14 @@ import AllCardsContainer from './components/locationCard/jsModules/AllCardsConta
 
 buildTableComponent(function (result) { //callback function returns the DOM target for your app   
     const targetDiv = result;
-    fetchData(function (result) {
+    const xHrReqParams = {
+        baseURI: 'https://my-json-server.typicode.com/moabs81/fakeJSONServer',
+        searchURI: '/officeCards100',
+        method: 'GET'
+    };
+    fetchData.call(xHrReqParams, (function (result) {
         ReactDOM.render(
-            //<AllCardsContainer cardData='hi' />, document.getElementById(targetDiv)
             <AllCardsContainer cardData={JSON.parse(result.target.responseText)} />, document.getElementById(targetDiv)
         );
-    });
+    }));
 });

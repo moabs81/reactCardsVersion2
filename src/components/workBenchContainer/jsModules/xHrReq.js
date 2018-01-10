@@ -10,6 +10,11 @@ const xHrReq = function () {
         getData.addEventListener('error', this.error);
     };
     getData.open(this.method, this.baseURI + this.searchURI);
+    if (this.headers) {
+        this.headers.forEach(el => {
+            getData.setRequestHeader(el.header, el.value);
+        });
+    };
     getData.send();
 };
 

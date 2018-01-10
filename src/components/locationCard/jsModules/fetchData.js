@@ -1,11 +1,11 @@
 import xHrReq from '../../workBenchContainer/jsModules/xHrReq';
 
-const fetchData = (cbReturn) => {
+const fetchData = function (cbReturn) {
     const xHrReqParams = {
-        //baseURI: 'http://localhost:3000',
-        baseURI: 'https://my-json-server.typicode.com/moabs81/fakeJSONServer',
-        searchURI: '/officeCards100',
-        method: 'GET',
+        baseURI: this.baseURI,
+        searchURI: this.searchURI,
+        method: this.method,
+        headers: this.headers,
         success: function (result) {
             cbReturn(result);
         }

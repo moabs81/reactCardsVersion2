@@ -9,6 +9,7 @@
         "test": "mocha",
         "cleanDist": "rm -rf dist/*",
         "build": "webpack --config ./config/webpack.prod.config.js",
+        "spBuild": "webpack --config ./config/webpack.sp.config.js",
         "serve": "json-server --watch ./fakeRestApi/db.json --static ./dist --port 5000"
     },
     "author": "Nick",
