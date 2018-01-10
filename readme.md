@@ -7,3 +7,8 @@ Things needed:
 * figure out workflow for transforming dev's 'app.js' to prod's 'spApp.js'
     * dev REST endpoints vs. prod REST endpoints
         * make dev match prod past the base
+
+### Context
+This simple application is being used as a pilot testbed for creating a development workflow for a SharePoint on-premise deployment. It makes use of my [scaffold](https://github.com/moabs81/scaffold2) and contains some additions to the workflow and build process that will included in a future SharePoint focused development scaffold. 
+
+### Technologies Used In This Project
