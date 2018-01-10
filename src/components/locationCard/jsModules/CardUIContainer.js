@@ -6,7 +6,6 @@ import CardBack from './CardBack';
 
 class CardUIContainer extends Component {
     render() {
-        console.log(this.props.checkedState);
         return (
             <label>
                 <input type='checkbox' defaultChecked={this.props.checkedState} onChange={this.props.handleClick} />
