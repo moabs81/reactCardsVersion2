@@ -1,4 +1,4 @@
-﻿# Title: Upload To SharePoint Library
+# Title: Upload To SharePoint Library
 # Author: Nick Hendricks
 # Version: 0.1.0
 # Directions For Use: 
@@ -14,7 +14,7 @@
 #  (2) graceful handling of error conditions for improper paths or no files
 # Happy Dev'ing!
 
-$uri="https://tsps.ncsecu.local/demo/S22307N/SiteAssets/spApp/"
+$uri="###replace1###/demo/###replace2###/SiteAssets/spApp/"
 $path = Get-Location
 Get-ChildItem -Path ./spApp -r | foreach {        
     $fullUri = $uri + $_

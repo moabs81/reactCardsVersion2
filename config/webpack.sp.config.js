@@ -8,7 +8,7 @@ module.exports = {
     entry: myConfig.buildPath('src/spEntry/spApp.js'),
     output: {
         path: myConfig.buildPath('spApp/'),
-        publicPath: 'https://tsps.ncsecu.local/demo/S22307N/SiteAssets/spApp/',
+        publicPath: '###replace1###/demo/###replace2###/SiteAssets/spApp/',
         filename: 'appBundle.js'
     },
     module: {

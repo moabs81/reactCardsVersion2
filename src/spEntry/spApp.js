@@ -5,7 +5,7 @@ import AllCardsContainer from '../components/locationCard/jsModules/AllCardsCont
 const generateColor = require('color-generator');
 
 const spRestParams = {
-    baseURI: 'https://tsps.ncsecu.local/support-center',
+    baseURI: '###replace1###/support-center',
     searchURI: '/_api/web/lists/getbytitle(\'Branch Directory\')/items',
     paramsURI: '?$select=BranchNumber,District,Title,PrimaryNumber&$filter=District eq 47&$top=20&$orderby=BranchNumber asc',
     method: 'GET',
