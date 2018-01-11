@@ -4,4 +4,4 @@
 --inline-diffs
 --no-warnings
 --recursive
---reporter nyan
+--reporter spec

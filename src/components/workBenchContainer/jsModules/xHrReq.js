@@ -9,7 +9,7 @@ const xHrReq = function () {
     if (this.error) {
         getData.addEventListener('error', this.error);
     };
-    getData.open(this.method, this.baseURI + this.searchURI);
+    getData.open(this.method, this.baseURI + this.searchURI + this.paramsURI);
     if (this.headers) {
         this.headers.forEach(el => {
             getData.setRequestHeader(el.header, el.value);

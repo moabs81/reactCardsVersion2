@@ -11,6 +11,7 @@ buildTableComponent(function (result) { //callback function returns the DOM targ
     const xHrReqParams = {
         baseURI: 'https://my-json-server.typicode.com/moabs81/fakeJSONServer',
         searchURI: '/officeCards100',
+        paramsURI: '?_limit=10',
         method: 'GET'
     };
     fetchData.call(xHrReqParams, (function (result) {
